@@ -1,0 +1,150 @@
+body{
+  
+  color: #00ff2a44;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.container{
+  background: #9c5e24;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+
+  position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 99;
+    
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    -webkit-box-shadow: 0px 3px 8px -4px rgb(25, 25, 25);
+    -moz-box-shadow: 0px 3px 8px -4px rgb(251, 188, 0);
+    box-shadow: 0px 3px 8px -4px rgb(25, 25, 25);
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  /*max-width: 1024px;*/
+}
+ul{
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+  flex-direction: row;
+}
+ul li a{
+  padding: 0 16px;
+  text-decoration: none;
+  color: white;
+}
+p {
+  margin: 0;
+}
+
+
+.logo{
+  display:flex;
+  align-items: center;
+}
+
+nav{
+
+  align-items: center;
+    
+  position: inherit;
+  /*
+  position:fixed;
+ 
+  display:flex;
+  align-items: center;
+ */
+}
+nav.active{
+  transform: translateX(0);
+}
+.circulo{
+  width: 50px;
+  height: 50px;
+ 
+  border-radius: 50%;
+  margin-right:8px;
+}
+
+.boton{
+  background: none;
+  border: none;
+  display: none;
+}
+.boton .linea{
+  height: 2px;
+  width: 20%;
+  background: #000;
+  margin: 4px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    
+    
+  color: #477059;
+}
+.texto-cursivo{
+  font-family: 'Great Vibes', cursive;
+}
+
+h1{
+  font-size: 6em;
+}
+
+h2{
+  font-size: 4em;
+}
+
+h3{
+  font-size: 2em;
+}
+
+h4{
+  font-size: 1.5em;
+}
+
+h5{
+  font-size: 1em;
+}
+
+#cuando{
+  align-items: center;
+  text-align: center;
+  padding-top: 10%;
+}
+
+/*Aplica los atributos menores de 768*/
+/*
+@media(min-width: 768px)
+{
+  .boton{
+    display: none;
+   
+  }
+  nav{
+
+    align-items: center;
+    
+    position: inherit;
+  }
+  ul{
+    flex-direction: row;
+  }
+  
+}
+*/
