@@ -13,21 +13,7 @@
     <body>
         
         
-         <!--Cancion-->
-      
-      <section class="d-flex justify-content-center">
-       <audio id="myAudio" controls>
-            <source src="Musica.mp3" type="audio/mpeg">
-        </audio>
-
-      </section>
         
-        <script>
-        window.addEventListener('load', function() {
-        var audio = document.getElementById("myAudio");
-        audio.play();
-        });
-        </script>
 
       <!--Frase e Iniciales(img)-->
       <section class="d-flex justify-content-center">
@@ -170,6 +156,23 @@
         </p>
         </section> 
         <!-- Fin contador regresivo -->
+    
+    
+     <!--Cancion-->
+      
+      <section class="d-flex justify-content-center">
+       <audio id="myAudio" controls>
+            <source src="Musica.mp3" type="audio/mpeg">
+        </audio>
+
+      </section>
+        
+        <script>
+        window.addEventListener('load', function() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+        });
+        </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => { 
