@@ -16,9 +16,15 @@
          <!--Cancion-->
       
       <section class="d-flex justify-content-center">
-        <audio id="myAudio" controls autoplay loop >
-            <source src="Musica.mp3" type="audio/mpeg">
-          </audio>
+       <audio id="myAudio" controls>
+  <source src="Musica.mp3" type="audio/mpeg">
+</audio>
+<script>
+  window.addEventListener('load', function() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+  });
+</script>
         
       </section>
 
