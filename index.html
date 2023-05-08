@@ -170,20 +170,27 @@
     
      <!--Cancion-->
       
+   
+
+
+    
+    
       <section class="d-flex justify-content-center">
-       <audio id="myAudio" controls>
+        <audio id="myAudio" controls>
             <source src="Warriors.mp3" type="audio/mpeg">
         </audio>
 
       </section>
         
-       <script>
-  window.addEventListener('load', function() {
-    var audioContext = new AudioContext();
-    var audio = document.getElementById("myAudio");
-    var source = audioContext.createMediaElementSource(audio);
-    source.connect(audioContext.destination);
-    audio.play();
+      <script>
+  var audioPlayed = false; // Variable para verificar si el audio ya se ha reproducido
+
+  window.addEventListener('scroll', function() {
+    if (!audioPlayed) { // Verificar si el audio no se ha reproducido aún
+      var audio = document.getElementById("myAudio");
+      audio.play();
+      audioPlayed = true; // Actualizar la variable para indicar que el audio se ha reproducido
+    }
   });
 </script>
 
