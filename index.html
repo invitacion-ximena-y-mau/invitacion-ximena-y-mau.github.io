@@ -32,6 +32,17 @@
           </audio>
       </section>
         
+<script>
+  var audioPlayed = false; // Variable para verificar si el audio ya se ha reproducido
+
+  window.addEventListener('load', function() {
+    if (!audioPlayed) { // Verificar si el audio no se ha reproducido aún
+      var audio = document.getElementById("myAudio");
+      audio.play();
+      audioPlayed = true; // Actualizar la variable para indicar que el audio se ha reproducido
+    }
+  });
+</script>
         
         
    
