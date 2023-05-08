@@ -172,17 +172,20 @@
       
       <section class="d-flex justify-content-center">
        <audio id="myAudio" controls>
-            <source src="Musica.mp3" type="audio/mpeg">
+            <source src="Warriors.mp3" type="audio/mpeg">
         </audio>
 
       </section>
         
-        <script>
-        window.addEventListener('load', function() {
-        var audio = document.getElementById("myAudio");
-        audio.play();
-        });
-        </script>
+       <script>
+  window.addEventListener('load', function() {
+    var audioContext = new AudioContext();
+    var audio = document.getElementById("myAudio");
+    var source = audioContext.createMediaElementSource(audio);
+    source.connect(audioContext.destination);
+    audio.play();
+  });
+</script>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => { 
